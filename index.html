@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran - RAFFSTR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2e0854, #800020, #0f2027);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .payment-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #ff416c, #8a2be2, #00c6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .payment-method {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: left;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-3px);
+            border: 1px solid #8a2be2;
+        }
+
+        .method-title {
+            font-weight: bold;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .dana .method-title { color: #0070ba; }
+        .gopay .method-title { color: #00aae7; }
+        .qris .method-title { color: #ff416c; }
+
+        .account-number {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .btn-dana {
+            background: #0070ba;
+            color: white;
+        }
+        .btn-dana:hover { background: #005fa3; }
+
+        .btn-wa {
+            background: #25d366;
+            color: white;
+        }
+        .btn-wa:hover { background: #20ba5a; }
+
+        .btn-confirm {
+            background: linear-gradient(to right, #ff416c, #8a2be2);
+            color: white;
+            margin-top: 20px;
+        }
+        .btn-confirm:hover {
+            opacity: 0.9;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <h2>METODE PEMBAYARAN</h2>
+        <p class="subtitle">Silakan pilih dan selesaikan pembayaran Anda di bawah ini</p>
+
+        <div class="payment-method dana">
+            <div class="method-title">DANA</div>
+            <div class="account-number">083867468118</div>
+            <a href="https://link.dana.id/qr/55e3nsh2" target="_blank" class="btn btn-dana">Buka Aplikasi DANA</a>
+        </div>
+
+        <div class="payment-method gopay">
+            <div class="method-title">GOPAY</div>
+            <div class="account-number">-</div>
+            <p style="font-size: 13px; color: #aaa;">Gopay saat ini sedang tidak tersedia.</p>
+        </div>
+
+        <div class="payment-method qris">
+            <div class="method-title">QRIS / CODE</div>
+            <p style="font-size: 14px; margin-bottom: 12px; color: #ddd;">Hubungi admin untuk meminta kode QRIS pembayaran terbaru.</p>
+            <a href="https://wa.me/6283197407094?text=Halo%20Admin%20Raffstr,%20saya%20mau%20minta%20QRIS%20untuk%20pembayaran" target="_blank" class="btn btn-wa">Hubungi Admin RAFFSTR</a>
+        </div>
+
+        <a href="https://wa.me/6283197407094?text=Halo%20Admin%20RAFFSTR,%20berikut%20adalah%20bukti%20transfer%20saya" target="_blank" class="btn btn-confirm">KIRIM BUKTI TRANSFER DISINI</a>
+
+        <div class="footer">
+            &copy; 2026 RAFFSTR. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html>
+
